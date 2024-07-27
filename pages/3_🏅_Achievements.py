@@ -12,38 +12,56 @@ selected= option_menu(
     orientation='horizontal',
 )
 if selected== 'Участия':
+
     # first columns about achievements
+    col1, col2 = st.columns(2, gap='small',
+                            vertical_alignment='center')  # create 2 columns ( photo and my name with surname)
+    with col1:
+        st.title(' Участие в конференциях ', anchor=False)
+        st.write(
+        '''
+         - Взятие 1-го места в V Всероссийской молодежной научной конференции "Мавлютовские чтения" 2021
+        - Взятие 3-го места в конкурсе Паяльник 2021
+        - Участие в  XIV Международной Научной-Практической Конференции "Пилотируемые полеты в космос"
+        - Участие в XXIII Международной Научно-Технической Конференции ПТиТТ-2021
+        - Был слушателем на конференциях "Разумные от народа" и "Волжский диджитал-тур"
+        '''
+        )
+        st.image('./assets/participant3.jpg', width=200)
+        st.image('./assets/conf4.jpg', width=300)
+    with col2:
+        st.image('./assets/1place.jpg', width=300)
+        st.image('./assets/participant.jpg', width=300)
+        st.image('./assets/conf2.jpg', width=300)
+        st.image('./assets/participant2.jpg', width=300)
+     #  st.image('./assets/participant3.jpg', width=200)
+     #  st.image('./assets/conf4.jpg', width=300)
+
+        # space between text and images
+    #st.write('--')
+    st.write('\5')
+    st.html("<p>"
+            "<span style='text-decoration: underline #2de2e6;text-underline-offset: 12px;text-decoration-thickness: 10px; font-size: 50%;font-weight: bold; color:#fbf9f9;'"
+            "> fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff<"
+            "/span</p>")
+    st.write('\7')
+    #st.subheader('', divider='violet')
+# second columns about achievements
+
     col1, col2 = st.columns(2, gap='small',
                             vertical_alignment='center')  # create 2 columns ( photo and my name with surname)
     with col1:
         st.title('Участие в программе "УМНИК" ', anchor=False)
         st.write(
-            'При студенческом клубе выйграли две наши заявки по проектам "Разработка ПАК по автоматизации складскоой логистики" и "афф"'  # you can write smth about you here more
+            'При кчастии в программе "УМНИК" команда моего студенческого клуба выйграла два гранта по проектам "Разработка ПАК по автоматизации складской логистики" и "Разработка прототипа для восстановления частично утраченного физического контроля"'  # you can write smth about you here more
         )
     with col2:
         st.image('./assets/grant.jpg', width=300)
         st.image('./assets/grant2.jpg', width=700)
 
+if selected== 'Проекты':
 
-
-# space between text and images
-    st.write('\10')
-
-
-# second columns about achievements
-    col1, col2 = st.columns(2, gap='small',
-                            vertical_alignment='center')  # create 2 columns ( photo and my name with surname)
-    with col1:
-        st.title('Участие в гранте ', anchor=False)
-        st.write(
-            'При студенческом клубе выйграли две наши заявки по проектам'  # you can write smth about you here more
-        )
-    with col2:
-        st.image('./assets/conf2.jpg', width=300)
-        st.image('./assets/conf4.jpg', width=300)
-
-
-
+    st.markdown("[First project **'Portfolio'**](https://myportfolio1.streamlit.app/)")
 
 # html
 #     def change_label_style(label, font_size='24px', font_color='#f6019d', font_family='sans-serif'):

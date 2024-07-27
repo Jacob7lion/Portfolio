@@ -39,12 +39,12 @@ if selected== 'Участия':
 
         # space between text and images
     #st.write('--')
-    st.write('\5')
+    st.write('\n')
     st.html("<p>"
             "<span style='text-decoration: underline #2de2e6;text-underline-offset: 12px;text-decoration-thickness: 10px; font-size: 50%;font-weight: bold; color:#fbf9f9;'"
             "> fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff<"
             "/span</p>")
-    st.write('\7')
+    st.write('\n')
     #st.subheader('', divider='violet')
 # second columns about achievements
 

@@ -16,7 +16,7 @@ with col2:
     )
 
 # write data about Experience
-st.write('\5')
+st.write('\n')
 st.subheader(':orange[Experience]')
 st.write(
  '''
@@ -31,7 +31,7 @@ st.write(
 st.subheader('',divider='violet')
 
 # write data about Hard skilss
-st.write('\5')
+st.write('\n')
 st.subheader(':blue[Hard skills]')
 st.write(
 '''
